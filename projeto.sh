@@ -1,12 +1,10 @@
 #!/usr/bin/bash
 
-echo teste
+pasta_downloads="/c/users/teste/Downloads*"
+pasta_documents="/c/users/teste/Documents/*"
+pasta_images="/c/users/teste/Pictures/*"
+pasta_desktop="/c/users/teste/Desktop/*"
 
-pasta_downloads="C:/Users/$USER/Downloads/*"
-pasta_documents="C:/Users/$USER/Documents/*"
-pasta_images="C:/Users/$USER/Pictures/*"
-pasta_desktop="C:/Users/$USER/Desktop/*"
-
-rm -rf $pasta_downloads $pasta_documents $pasta_images $pasta_desktop !"*.Ink"
+rm -rf !"*.Ink" $pasta_downloads $pasta_documents $pasta_images $pasta_desktop 
 
 echo "todos os ficheiros foram eliminados"

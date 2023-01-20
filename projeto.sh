@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/usr/bin/bash
+
+echo teste
 
 pasta_downloads="C:/Users/$USER/Downloads/*"
 pasta_documents="C:/Users/$USER/Documents/*"

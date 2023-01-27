@@ -16,4 +16,12 @@ done
 
 shopt -u extglob
 
-echo "todos os ficheiros foram eliminados"
+echo "Todos os ficheiros foram eliminados"
+
+Cache="C:\\Users\\teste\\AppData\\Local\\Microsoft\\Edge\\User Data\\Default\\Cache"
+Cookies="C:\\Users\\teste\\AppData\\Local\\Microsoft\\Edge\\User Data\\Default\\Cookies"
+
+rm -r "$Cache"
+rm -r "$Cookies"
+
+echo "A cache e os cookies do browser foram limpos"

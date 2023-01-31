@@ -17,7 +17,7 @@ for pasta in $pasta_downloads $pasta_documents $pasta_images $pasta_desktop
 do
 	echo $pasta
 	cd $pasta
-	rm !(*.Ink|teste.sh|msedge.exe) 2> error.log
+	rm !(*.Ink|teste.sh) 2> error.log
 done
 
 shopt -u extglob

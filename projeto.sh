@@ -26,8 +26,8 @@ echo "Todos os ficheiros foram eliminados"
 
 #definir a localização da cache e cookies do browser (neste caso o Edge)
 
-Cache="C:\\Users\\teste\\AppData\\Local\\Microsoft\\Edge\\User Data\\Default\\Cache"
-Cookies="C:\\Users\\teste\\AppData\\Local\\Microsoft\\Edge\\User Data\\Default\\Cookies"
+Cache="C:\\Users\\"$user"\\AppData\\Local\\Microsoft\\Edge\\User Data\\Default\\Cache"
+Cookies="C:\\Users\\"$user"\\AppData\\Local\\Microsoft\\Edge\\User Data\\Default\\Cookies"
 
 #eliminar os cookies e cache
 

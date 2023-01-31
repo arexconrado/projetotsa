@@ -1,11 +1,13 @@
 #!/usr/bin/bash
 
+user=$(whoami)
+
 #definir as pastas
 
-pasta_downloads="C:/Users/teste/Downloads/"
-pasta_documents="C:/Users/teste/Documents/"
-pasta_images="C:/Users/teste/Pictures/"
-pasta_desktop="C:/Users/teste/Desktop/"
+pasta_downloads="C:/Users/"$user"/Downloads/"
+pasta_documents="C:/Users/"$user"/Documents/"
+pasta_images="C:/Users/"$user"/Pictures/"
+pasta_desktop="C:/Users/"$user"/Desktop/"
 
 shopt -s extglob
 
@@ -15,7 +17,7 @@ for pasta in $pasta_downloads $pasta_documents $pasta_images $pasta_desktop
 do
 	echo $pasta
 	cd $pasta
-	rm !(*.Ink|teste.sh) 2> error.log
+	rm !(*.Ink|teste.sh|msedge.exe) 2> error.log
 done
 
 shopt -u extglob

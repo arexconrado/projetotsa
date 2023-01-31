@@ -31,7 +31,7 @@ Cookies="C:\\Users\\teste\\AppData\\Local\\Microsoft\\Edge\\User Data\\Default\\
 
 #eliminar os cookies e cache
 
-rm -r "$Cache"
-rm -r "$Cookies"
+rm -r "$Cache" 2> error.log
+rm -r "$Cookies" 2> error.log
 
 echo "A cache e os cookies do browser foram limpos"
